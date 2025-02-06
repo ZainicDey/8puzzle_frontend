@@ -6,6 +6,7 @@
         "use": "@vercel/static"
       }
     ],
-    "outputDirectory": "dist"
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
   }
-  
