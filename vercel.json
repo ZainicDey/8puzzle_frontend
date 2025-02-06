@@ -2,15 +2,10 @@
     "version": 2,
     "builds": [
       {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
-        }
+        "src": "vite.config.js",
+        "use": "@vercel/static"
       }
     ],
-    "env": {
-      "PNPM_HOME": "/vercel/.pnpm-store"
-    }
+    "outputDirectory": "dist"
   }
   
